@@ -7,13 +7,13 @@ função que, a cada intervalo aleatório de tempo entre 2 e 4 segundos, troque 
 da lâmpada e retorne para um callback que deve exibir no console o estado atual da
 lâmpada. Dica: pesquisar sobre a função setInterval.*/
 
-const printEstadoLampada = (estado)=> {
-console.log(estado)
+const printEstadoLampada = (estado) => {
+    console.log(estado)
 }
 const lampada = () => {
-let statusLampada = true;
-setInterval(()=> {
-statusLampada = false;
-printEstadoLampada(statusLampada);
-}, getRndMsInSeconds(2,4))
+    let statusLampada = true;
+    setInterval(() => {
+        statusLampada = false;
+        printEstadoLampada(statusLampada);
+    }, getRndMsInSeconds(2, 4))
 }
